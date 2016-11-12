@@ -9,7 +9,7 @@ body {
 }
 
 .header-image {
-	background-image: url('https://static.wixstatic.com/media/21e0bd_14266cfb95d848ea882b7dae06a9cdfa~mv2.jpg/v1/fill/w_1200,h_704,al_c,q_85,usm_0.66_1.00_0.01/21e0bd_14266cfb95d848ea882b7dae06a9cdfa~mv2.jpg');
+	background-image: url('icons/fullbackground.jpg');
 	background-size: cover;
 	box-shadow: inset 0px 0px 0px 400px rgba(0,0,0,0.5);
 }
@@ -40,7 +40,7 @@ button:active {
 }
 
 .test {
-	padding: 40px;
+	padding: 40px 5px;
 	max-width: 900px;
 	margin: 0 auto;
 }
@@ -192,6 +192,6 @@ button:active {
 		font-size: 30px;
 	}
     .header-image {
-	background-image: url('https://static.wixstatic.com/media/21e0bd_b5d2a72eba974a568723090552605558~mv2.jpg/v1/fill/w_574,h_560,al_c,lg_1,q_80/21e0bd_b5d2a72eba974a568723090552605558~mv2.jpg');
+	background-image: url('icons/mobilebackground.jpg');
 	}
 }
