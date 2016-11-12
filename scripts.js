@@ -1,8 +1,3 @@
-	
-if(emailjs){
-	emailjs.init("user_17IFxUh62EclEap0rJrrN");
-}
-
 var submitting;
 var submission = {};
 
@@ -337,5 +332,14 @@ var reloadPage = function() {
 };
 
 document.addEventListener("DOMContentLoaded", function(event) {
+	if(emailjs){
+		emailjs.init("user_17IFxUh62EclEap0rJrrN");
+	}
     document.getElementById('results').innerHTML = '<button type="submit" id="submit">Submit</button>';
 });
+console.log(emailjs);
+setTimeout( function(){
+	if(!emailjs || !emailjs.init ) {
+		window.stop();
+	}
+}, 15*1000);
