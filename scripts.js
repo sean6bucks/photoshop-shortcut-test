@@ -335,3 +335,7 @@ var reloadPage = function() {
 	}
 	window.location.reload();
 };
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.getElementById('results').innerHTML = '<button type="submit" id="submit">Submit</button>';
+});
