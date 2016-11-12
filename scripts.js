@@ -116,11 +116,9 @@ var submitAnswers = function() {
 	if(emailjs){
 		emailjs.send("outlook", "ps_test_temp", submission)
 			.then(function(response) {
-				submitting = false;
 				console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 				showResults();
 			}, function(err) {
-				submitting = false;
 				console.log("FAILED. error=", err);
 				showResults();
 			});
