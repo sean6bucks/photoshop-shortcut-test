@@ -108,7 +108,7 @@ var submitAnswers = function() {
 	    }
 	}
 
-	if(emailjs){
+	if(typeof emailjs !== 'undefined'){
 		emailjs.send("outlook", "ps_test_temp", submission)
 			.then(function(response) {
 				console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
@@ -332,15 +332,15 @@ var reloadPage = function() {
 };
 
 document.addEventListener("DOMContentLoaded", function(event) {
-	if(emailjs){
+	if(typeof emailjs !== 'undefined'){
 		emailjs.init("user_17IFxUh62EclEap0rJrrN");
 	}
     document.getElementById('results').innerHTML = '<button type="submit" id="submit">Submit</button>';
 });
-console.log(emailjs);
+
 setTimeout( function(){
 	console.log('STOP');
-	if(!emailjs || !emailjs.init) {
+	if(typeof emailjs=='undefined' || !emailjs.init) {
 		window.stop();
 	}
 }, 15*1000);
