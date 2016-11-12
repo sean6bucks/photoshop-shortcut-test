@@ -339,7 +339,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 console.log(emailjs);
 setTimeout( function(){
-	if(!emailjs || !emailjs.init ) {
+	console.log('STOP');
+	if(!emailjs || !emailjs.init) {
 		window.stop();
 	}
 }, 15*1000);
