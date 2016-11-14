@@ -8,12 +8,6 @@ body {
 	font-family: 'Helvetica', Arial, sans-serif;
 }
 
-.header-image {
-	background-image: url('icons/fullbackground.jpg');
-	background-size: cover;
-	box-shadow: inset 0px 0px 0px 400px rgba(0,0,0,0.5);
-}
-
 h1 {
 	padding: 100px 50px;
 	text-align: center;
@@ -190,8 +184,5 @@ button:active {
 	h1 {
 		padding: 150px 10px;
 		font-size: 30px;
-	}
-    .header-image {
-	background-image: url('icons/mobilebackground.jpg');
 	}
 }
